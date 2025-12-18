@@ -1,0 +1,454 @@
+{
+  "C01-B Salad Meal (Paneer, Vinaigrette)": {
+    "1": {
+      "sop": "REF: PHYSICAL MANUAL (C01-B) | BASE: Paneer | DRESSING: Vinaigrette | TOPPING: Standard",
+      "active_ingredients": [
+        "paneer",
+        "lettuce",
+        "tomato",
+        "onion",
+        "corn",
+        "vinegar",
+        "olive oil",
+        "lemon",
+        "mustard sauce",
+        "salt",
+        "pepper powder",
+        "parmesan cheese",
+        "fresh coriander",
+        "whole wheat bread"
+      ]
+    }
+  },
+  "C01-B Salad Meal (Paneer, Creamy)": {
+    "1": {
+      "sop": "REF: PHYSICAL MANUAL (C01-B) | BASE: Paneer | DRESSING: Creamy | TOPPING: Standard",
+      "active_ingredients": [
+        "paneer",
+        "lettuce",
+        "tomato",
+        "onion",
+        "corn",
+        "curd",
+        "mustard sauce",
+        "lemon",
+        "salt",
+        "pepper powder",
+        "parmesan cheese",
+        "fresh coriander",
+        "whole wheat bread"
+      ]
+    }
+  },
+  "C01-B Salad Meal (Chicken, Vinaigrette)": {
+    "1": {
+      "sop": "REF: PHYSICAL MANUAL (C01-B) | BASE: Chicken | DRESSING: Vinaigrette | TOPPING: Standard",
+      "active_ingredients": [
+        "chicken",
+        "lettuce",
+        "tomato",
+        "onion",
+        "corn",
+        "vinegar",
+        "olive oil",
+        "lemon",
+        "mustard sauce",
+        "salt",
+        "pepper powder",
+        "parmesan cheese",
+        "fresh coriander",
+        "whole wheat bread"
+      ]
+    }
+  },
+  "C01-B Salad Meal (Chicken, Creamy)": {
+    "1": {
+      "sop": "REF: PHYSICAL MANUAL (C01-B) | BASE: Chicken | DRESSING: Creamy | TOPPING: Standard",
+      "active_ingredients": [
+        "chicken",
+        "lettuce",
+        "tomato",
+        "onion",
+        "corn",
+        "curd",
+        "mustard sauce",
+        "lemon",
+        "salt",
+        "pepper powder",
+        "parmesan cheese",
+        "fresh coriander",
+        "whole wheat bread"
+      ]
+    }
+  },
+  "C01-B Salad Meal (Egg, Vinaigrette)": {
+    "1": {
+      "sop": "REF: PHYSICAL MANUAL (C01-B) | BASE: Boiled Eggs | DRESSING: Vinaigrette | TOPPING: Standard",
+      "active_ingredients": [
+        "eggs",
+        "lettuce",
+        "tomato",
+        "onion",
+        "corn",
+        "vinegar",
+        "olive oil",
+        "lemon",
+        "mustard sauce",
+        "salt",
+        "pepper powder",
+        "parmesan cheese",
+        "fresh coriander",
+        "whole wheat bread"
+      ]
+    }
+  },
+  "C01-B Salad Meal (Egg, Creamy)": {
+    "1": {
+      "sop": "REF: PHYSICAL MANUAL (C01-B) | BASE: Boiled Eggs | DRESSING: Creamy | TOPPING: Standard",
+      "active_ingredients": [
+        "eggs",
+        "lettuce",
+        "tomato",
+        "onion",
+        "corn",
+        "curd",
+        "mustard sauce",
+        "lemon",
+        "salt",
+        "pepper powder",
+        "parmesan cheese",
+        "fresh coriander",
+        "whole wheat bread"
+      ]
+    }
+  },
+  "C02-B Chinese Bowl (Chilly Paneer, Noodles)": {
+    "1": {
+      "sop": "REF: PHYSICAL MANUAL (C02-B) | PROTEIN: Chilly Paneer | CARB: Noodles",
+      "active_ingredients": [
+        "paneer",
+        "noodles",
+        "broccoli",
+        "cabbage",
+        "green beans",
+        "soy sauce",
+        "vinegar",
+        "red chilli sauce",
+        "Ginger Garlic paste",
+        "cornflour",
+        "olive oil",
+        "salt",
+        "sugar",
+        "fresh coriander"
+      ]
+    }
+  },
+  "C02-B Chinese Bowl (Chilly Paneer, Rice)": {
+    "1": {
+      "sop": "REF: PHYSICAL MANUAL (C02-B) | PROTEIN: Chilly Paneer | CARB: Rice",
+      "active_ingredients": [
+        "paneer",
+        "basmati rice",
+        "broccoli",
+        "cabbage",
+        "green beans",
+        "soy sauce",
+        "vinegar",
+        "red chilli sauce",
+        "Ginger Garlic paste",
+        "cornflour",
+        "salt",
+        "sugar",
+        "fresh coriander"
+      ]
+    }
+  },
+  "C02-B Chinese Bowl (Orange Paneer, Noodles)": {
+    "1": {
+      "sop": "REF: PHYSICAL MANUAL (C02-B) | PROTEIN: Orange Paneer | CARB: Noodles",
+      "active_ingredients": [
+        "paneer",
+        "noodles",
+        "broccoli",
+        "cabbage",
+        "green beans",
+        "orange",
+        "soy sauce",
+        "cornflour",
+        "ginger",
+        "olive oil",
+        "salt",
+        "sugar",
+        "fresh coriander"
+      ]
+    }
+  },
+  "C02-B Chinese Bowl (Orange Paneer, Rice)": {
+    "1": {
+      "sop": "REF: PHYSICAL MANUAL (C02-B) | PROTEIN: Orange Paneer | CARB: Rice",
+      "active_ingredients": [
+        "paneer",
+        "basmati rice",
+        "broccoli",
+        "cabbage",
+        "green beans",
+        "orange",
+        "soy sauce",
+        "cornflour",
+        "ginger",
+        "salt",
+        "sugar",
+        "fresh coriander"
+      ]
+    }
+  },
+  "C02-B Chinese Bowl (Chilly Chicken, Noodles)": {
+    "1": {
+      "sop": "REF: PHYSICAL MANUAL (C02-B) | PROTEIN: Chilly Chicken | CARB: Noodles",
+      "active_ingredients": [
+        "chicken",
+        "noodles",
+        "broccoli",
+        "cabbage",
+        "green beans",
+        "soy sauce",
+        "vinegar",
+        "red chilli sauce",
+        "Ginger Garlic paste",
+        "cornflour",
+        "olive oil",
+        "salt",
+        "sugar",
+        "fresh coriander"
+      ]
+    }
+  },
+  "C02-B Chinese Bowl (Chilly Chicken, Rice)": {
+    "1": {
+      "sop": "REF: PHYSICAL MANUAL (C02-B) | PROTEIN: Chilly Chicken | CARB: Rice",
+      "active_ingredients": [
+        "chicken",
+        "basmati rice",
+        "broccoli",
+        "cabbage",
+        "green beans",
+        "soy sauce",
+        "vinegar",
+        "red chilli sauce",
+        "Ginger Garlic paste",
+        "cornflour",
+        "salt",
+        "sugar",
+        "fresh coriander"
+      ]
+    }
+  },
+  "C02-B Chinese Bowl (Orange Chicken, Noodles)": {
+    "1": {
+      "sop": "REF: PHYSICAL MANUAL (C02-B) | PROTEIN: Orange Chicken | CARB: Noodles",
+      "active_ingredients": [
+        "chicken",
+        "noodles",
+        "broccoli",
+        "cabbage",
+        "green beans",
+        "orange",
+        "soy sauce",
+        "cornflour",
+        "ginger",
+        "olive oil",
+        "salt",
+        "sugar",
+        "fresh coriander"
+      ]
+    }
+  },
+  "C02-B Chinese Bowl (Orange Chicken, Rice)": {
+    "1": {
+      "sop": "REF: PHYSICAL MANUAL (C02-B) | PROTEIN: Orange Chicken | CARB: Rice",
+      "active_ingredients": [
+        "chicken",
+        "basmati rice",
+        "broccoli",
+        "cabbage",
+        "green beans",
+        "orange",
+        "soy sauce",
+        "cornflour",
+        "ginger",
+        "salt",
+        "sugar",
+        "fresh coriander"
+      ]
+    }
+  },
+  "C02-B Chinese Bowl (Shrimp, Noodles)": {
+    "1": {
+      "sop": "REF: PHYSICAL MANUAL (C02-B) | PROTEIN: Shrimp | CARB: Noodles",
+      "active_ingredients": [
+        "shrimp",
+        "noodles",
+        "broccoli",
+        "cabbage",
+        "green beans",
+        "soy sauce",
+        "vinegar",
+        "peeled garlic",
+        "neutral oil",
+        "olive oil",
+        "salt",
+        "sugar",
+        "fresh coriander"
+      ]
+    }
+  },
+  "C02-B Chinese Bowl (Shrimp, Rice)": {
+    "1": {
+      "sop": "REF: PHYSICAL MANUAL (C02-B) | PROTEIN: Shrimp | CARB: Rice",
+      "active_ingredients": [
+        "shrimp",
+        "basmati rice",
+        "broccoli",
+        "cabbage",
+        "green beans",
+        "soy sauce",
+        "vinegar",
+        "peeled garlic",
+        "neutral oil",
+        "salt",
+        "sugar",
+        "fresh coriander"
+      ]
+    }
+  },
+  "C03-B Sandwich (Grilled Paneer, Spiced Red)": {
+    "1": {
+      "sop": "REF: PHYSICAL MANUAL (C03-B) | FILL: Grilled Paneer | SAUCE: Spiced Red",
+      "active_ingredients": [
+        "whole wheat bread",
+        "paneer",
+        "lettuce",
+        "tomato",
+        "onion",
+        "cheese slice",
+        "ketchup",
+        "curd",
+        "lemon",
+        "peeled garlic",
+        "kashmiri chili powder",
+        "cumin powder",
+        "chaat masala",
+        "sugar",
+        "salt",
+        "pepper powder"
+      ]
+    }
+  },
+  "C03-B Sandwich (Grilled Paneer, Green Herb)": {
+    "1": {
+      "sop": "REF: PHYSICAL MANUAL (C03-B) | FILL: Grilled Paneer | SAUCE: Green Herb",
+      "active_ingredients": [
+        "whole wheat bread",
+        "paneer",
+        "lettuce",
+        "tomato",
+        "onion",
+        "cheese slice",
+        "fresh coriander",
+        "curd",
+        "green chili",
+        "peeled garlic",
+        "sugar",
+        "lemon",
+        "salt",
+        "pepper powder"
+      ]
+    }
+  },
+  "C03-B Sandwich (Grilled Paneer, Mustard)": {
+    "1": {
+      "sop": "REF: PHYSICAL MANUAL (C03-B) | FILL: Grilled Paneer | SAUCE: Mustard",
+      "active_ingredients": [
+        "whole wheat bread",
+        "paneer",
+        "lettuce",
+        "tomato",
+        "onion",
+        "cheese slice",
+        "curd",
+        "mustard sauce",
+        "peeled garlic",
+        "pepper powder",
+        "cumin powder",
+        "sugar",
+        "lemon",
+        "salt"
+      ]
+    }
+  },
+  "C03-B Sandwich (Grilled Chicken, Spiced Red)": {
+    "1": {
+      "sop": "REF: PHYSICAL MANUAL (C03-B) | FILL: Grilled Chicken | SAUCE: Spiced Red",
+      "active_ingredients": [
+        "whole wheat bread",
+        "chicken",
+        "lettuce",
+        "tomato",
+        "onion",
+        "cheese slice",
+        "ketchup",
+        "curd",
+        "lemon",
+        "peeled garlic",
+        "kashmiri chili powder",
+        "cumin powder",
+        "chaat masala",
+        "sugar",
+        "salt",
+        "pepper powder"
+      ]
+    }
+  },
+  "C03-B Sandwich (Grilled Chicken, Green Herb)": {
+    "1": {
+      "sop": "REF: PHYSICAL MANUAL (C03-B) | FILL: Grilled Chicken | SAUCE: Green Herb",
+      "active_ingredients": [
+        "whole wheat bread",
+        "chicken",
+        "lettuce",
+        "tomato",
+        "onion",
+        "cheese slice",
+        "fresh coriander",
+        "curd",
+        "green chili",
+        "peeled garlic",
+        "sugar",
+        "lemon",
+        "salt",
+        "pepper powder"
+      ]
+    }
+  },
+  "C03-B Sandwich (Grilled Chicken, Mustard)": {
+    "1": {
+      "sop": "REF: PHYSICAL MANUAL (C03-B) | FILL: Grilled Chicken | SAUCE: Mustard",
+      "active_ingredients": [
+        "whole wheat bread",
+        "chicken",
+        "lettuce",
+        "tomato",
+        "onion",
+        "cheese slice",
+        "curd",
+        "mustard sauce",
+        "peeled garlic",
+        "pepper powder",
+        "cumin powder",
+        "sugar",
+        "lemon",
+        "salt"
+      ]
+    }
+  }
+}

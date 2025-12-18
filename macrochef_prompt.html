@@ -1,0 +1,144 @@
+MACROCHEF ABSTRACT(Context):
+{{ abstract }}
+
+MASTER INGREDIENT LIST (Domain Context):
+{{ master_ingredient_list }}
+
+MASTER SINGLE SERVE LIST (Portion Context):
+{{ master_single_serve_list }}
+
+VECTOR CONSTRAINTS:
+- All Ingredient Vectors must be exactly {{ vector_length }} dimensions long.
+- Format: Binary string [0, 1, 0, ...].
+
+------------------------------------------------------------------
+
+{# --- LOGIC BRANCH: PRE-FAB (Generative) --- #}
+{% if is_prefab %}
+TASK: Generate a quick, healthy, homestyle {{ dish_title }} recipe serving {{ serving_size }}.
+This is meant for our chefs.
+
+{% if customization_string != "None" %}
+NOTE: The customer has a specific customization request: "{{ customization_string }}"
+{% endif %}
+
+MANDATORY REQUIREMENTS:
+1. If applicable, include crucial 'Indian cuisine' steps (bhuna, tadka).
+2. If applicable, explicitly mention which 'Khade Masale' (whole spices) to use.
+3. Strictly follow the [Master Single Serve List] for portions.
+4. Include a brief macro summary.
+5. GENERATE INGREDIENTS DATA:
+   - Provide the <ing_list> (Python list of ingredient names used).
+   - Provide the <ing_vec> (Binary vector strictly following [Master Ingredient List]).
+
+==================================================
+ASSEMBLY INSTRUCTIONS & COMPONENT BREAKDOWN
+==================================================
+
+### 1. MAIN DISH: {{ dish_title }}
+[Follow Generated SOP Above]
+
+--------------------------------------------------
+{% if is_side %}
+### 2. SIDE DISH: {{ side_title }}
+**Instructions:** {{ side_dish_sop }}
+
+**Inventory Data (Merge this):**
+> List: {{ side_ingredients_list }}
+> Vector: {{ side_ingredients_vector }}
+
+--------------------------------------------------
+{% endif %}
+
+### {% if is_side %}3{% else %}2{% endif %}. CARB SIDE: {{ carb_side_title }}
+**Instructions:** {{ carb_side_instructions }}
+
+**Inventory Data (Merge this):**
+> List: {{ carb_ingredients_list }}
+> Vector: {{ carb_ingredients_vector }}
+
+==================================================
+
+{% if customization_string != "None" %}
+CUSTOMIZATION: Adjust the final steps to accommodate: "{{ customization_string }}".
+{% endif %}
+
+FINAL OUTPUT FORMAT(Keep everything in text only no images or tables or math characters etc):
+Return the final merged SOP (incorporating Side Dish steps if applicable) followed by the Final Merged Ingredients Data:
+1. <final_ing_list> (Merged list of names from Main Dish + Side Dish + Carb Side).
+2. <final_ing_vec> (Merged binary vector of Main Dish + Side Dish + Carb Side).
+
+
+{# --- LOGIC BRANCH: CUSTOM PRE-FAB (Formatting Only) --- #}
+{% elif is_custom_prefab %}
+TASK: Output the **Physical Manual Reference** for this dish. 
+DO NOT GENERATE COOKING STEPS. The chef will follow the physical manual.
+Your primary job here is to calculate the **Ingredients Vector** for our Operations Team.
+
+DISH VARIANT: {{ dish_title }} ({{ protein_choice }})
+SERVING SIZE: {{ serving_size }}
+
+{% if customization_string != "None" %}
+NOTE: The customer has a specific customization request: "{{ customization_string }}"
+{% endif %}
+
+==================================================
+COMPONENT BREAKDOWN & INVENTORY DATA
+==================================================
+
+### 1. MAIN DISH (Base + Protein)
+**Manual Reference:**
+"""
+{{ imported_recipe_sop }}
+"""
+
+**Inventory Data (Merge this):**
+> List: {{ main_ingredients_list }}
+> Vector: {{ main_ingredients_vector }}
+
+--------------------------------------------------
+{% if is_side %}
+### 2. SIDE DISH: {{ side_title }}
+**Instructions:** {{ side_dish_sop }}
+
+**Inventory Data (Merge this):**
+> List: {{ side_ingredients_list }}
+> Vector: {{ side_ingredients_vector }}
+
+--------------------------------------------------
+{% endif %}
+
+### {% if is_side %}3{% else %}2{% endif %}. CARB CHOICE: {{ carb_side_title }}
+**Instructions:** {{ carb_side_instructions }}
+
+**Inventory Data (Merge this):**
+> List: {{ carb_ingredients_list }}
+> Vector: {{ carb_ingredients_vector }}
+
+==================================================
+
+INSTRUCTIONS:
+1. Output the **Manual Reference** code/instructions exactly as provided in the "Main Dish" section above.
+2. {% if is_side %}Append the Side Dish instructions.{% endif %}
+3. {% if customization_string != "None" %}Note the customization: "{{ customization_string }}" for the chef.{% endif %}
+4. **CRITICAL:** Calculate the Final Merged Ingredients Data by merging:
+   - Main Dish Vector
+   - {% if is_side %}Side Dish Vector{% endif %}
+   - Carb Choice Vector
+
+FINAL OUTPUT FORMAT(Keep everything in text only no images or tables or math characters etc):
+Return the SOP Reference Info followed by the Final Merged Ingredients Data:
+1. <final_ing_list> (Merged list of names from Main + Side + Carb).
+2. <final_ing_vec> (Merged binary vector of Main + Side + Carb).
+
+
+{# --- LOGIC BRANCH: FULL CUSTOM --- #}
+{% elif is_full_custom_request %}
+TASK: Generate a fully customized recipe based on this raw request:
+"{{ full_custom_request }}"
+{% endif %}
+
+{# --- TRANSLATION LAYER --- #}
+{% if translation_lang %}
+FINAL STEP: Translate the complete SOP (not the vectors/lists) into {{ translation_lang }} also keep a separate english version for reference.
+{% endif %}
