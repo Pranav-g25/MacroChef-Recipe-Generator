@@ -213,20 +213,20 @@ if __name__ == "__main__":
     generator = MacroChefGenerator()
     print(generator.create_prompt(
         
-        #is_prefab=True,
-        is_custom_prefab=True,
+        is_prefab=True,
+        #is_custom_prefab=True,
         #is_customization=True,
-        #customization_string= "Use Air fryer if available or pan fry with less oil if not",
-        dish_title="C02-B Chinese Bowl", 
-        protein_choice="Orange Paneer",
+        #customization_string= "no carbs",
+        dish_title="Prawns Curry", 
+        #protein_choice="Chicken",
         #dressing_choice="Creamy",
         #sauce_choice="Green Herb",
-        carb_choice="Noodles",
+        #carb_choice="Noodles",
         #carb_choice="Rice",
         #is_carbside = False,
-        serving_size="4",
-        #side_title= "S01 Homestyle Dal Tadka (Batched)",
-        #carb_side_title="Steamed Basmati Rice",
+        serving_size="1.5",
+        side_title= "F01 Fruit Chat",
+        carb_side_title="Whole Wheat Roti",
         #translation_lang= "Hinglish with devnagri script",
     ))
 
