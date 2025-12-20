@@ -68,12 +68,18 @@ CUSTOMIZATION: Adjust the final steps to accommodate: "{{ customization_string }
 FINAL OUTPUT FORMAT(Keep everything in text only no images or tables or math characters etc):
 Return the final merged SOP (incorporating Side Dish and Carb steps if applicable) followed by the Final Merged Ingredients Data:
 1. <final_ing_list> (Merged list of names from Main Dish{% if is_side %} + Side Dish{% endif %}{% if is_carbside %} + Carb Side{% endif %}).
+   Group the merged ingredients by their category found in the [Master Ingredient List]:
+   - Protein: []
+   - Essentials (N.P.): []
+   - Essentials (P): []
+   - Speciality(NP): []
+   - Speciality(P): []
 2. <final_ing_vec> (Merged binary vector of Main Dish{% if is_side %} + Side Dish{% endif %}{% if is_carbside %} + Carb Side{% endif %}).
 
 
 {# --- LOGIC BRANCH: CUSTOM PRE-FAB (Formatting Only) --- #}
 {% elif is_custom_prefab %}
-TASK: Output the **Physical Manual Reference** for this dish. 
+TASK: Output the **Physical Manual Reference** for this dish.
 DO NOT GENERATE COOKING STEPS. The chef will follow the physical manual.
 Your primary job here is to calculate the **Ingredients Vector** for our Operations Team.
 
@@ -121,6 +127,12 @@ INSTRUCTIONS:
 FINAL OUTPUT FORMAT(Keep everything in text only no images or tables or math characters etc):
 Return the SOP Reference Info followed by the Final Merged Ingredients Data:
 1. <final_ing_list> (Merged list of names from Main{% if is_side %} + Side{% endif %}).
+   Group the merged ingredients by their category found in the [Master Ingredient List]:
+   - Protein: []
+   - Essentials (N.P.): []
+   - Essentials (P): []
+   - Speciality(NP): []
+   - Speciality(P): []
 2. <final_ing_vec> (Merged binary vector of Main{% if is_side %} + Side{% endif %}).
 
 
