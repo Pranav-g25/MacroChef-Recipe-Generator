@@ -1,10 +1,18 @@
 {
-  "Steamed Basmati Rice": {
+  "Rice": {
     "sop": "PREP: Wash rice thoroughly and soak for 20 mins. COOK: Boil with 1:2 water ratio or steam until fluffy. \nQUANTITY LOGIC: 1 Standard Serving = 50g Raw Rice. \nSCALING: Multiply 50g x [Number of Servings]. (e.g., 2 Servings = 100g Raw Rice). \nMACROS (Approx per serving): ~180 Kcal | 40g Carbs | 4g Protein.",
     "active_ingredients": ["basmati rice"]
   },
-  "Whole Wheat Roti": {
-    "sop": "PREP: Knead whole wheat flour (Atta) with water to a soft dough. Rest 15 mins. COOK: Roll into discs and cook on hot tawa/flame until puffed. \nQUANTITY LOGIC: 1 Standard Serving = 2 Rotis. (Use 25g dry Atta per Roti = 50g Total Dry Atta per serving). \nSCALING: Multiply 50g x [Number of Servings]. (e.g., 2 Servings = 100g Atta -> Make 4 Rotis). \nMACROS (Approx per serving/2 Rotis): ~340 Kcal | 72g Carbs | 13g Protein.",
+  "Roti": {
+    "sop": "PREP: Knead whole wheat flour (Atta) with water to a soft dough. Rest 15 mins. COOK: Roll into discs and cook on hot tawa/flame until puffed. \nQUANTITY LOGIC: 1 Standard Serving = 2 Rotis. (Use 25g dry Atta per Roti = 50g Total Dry Atta per serving). \nSCALING: Multiply 50g x [Number of Servings]. (e.g., 2 Servings = 100g Atta -> Make 4 Rotis). \nMACROS (Approx per serving/2 Rotis): ~140 Kcal | 28g Carbs | 6g Protein.",
     "active_ingredients": ["Atta"]
+  },
+  "Ghee Roti": {
+    "sop": "PREP: Knead whole wheat flour (Atta) with water to a soft dough. Rest 15 mins. COOK: Roll into discs and cook on hot tawa/flame until puffed. Put 5ml ghee per roti. \nQUANTITY LOGIC: 1 Standard Serving = 2 Rotis. (Use 25g dry Atta per Roti = 50g Total Dry Atta per serving). \nSCALING: Multiply 50g x [Number of Servings]. (e.g., 2 Servings = 100g Atta -> Make 4 Rotis). \nMACROS (Approx per serving/2 Rotis): ~230 Kcal | 28g Carbs | 6g Protein.",
+    "active_ingredients": ["Atta", "ghee"]
+  },
+  "Butter Roti": {
+    "sop": "PREP: Knead whole wheat flour (Atta) with water to a soft dough. Rest 15 mins. COOK: Roll into discs and cook on hot tawa/flame until puffed. \nQUANTITY LOGIC: 1 Standard Serving = 2 Rotis. (Use 25g dry Atta per Roti = 50g Total Dry Atta per serving). \nSCALING: Multiply 50g x [Number of Servings]. (e.g., 2 Servings = 100g Atta -> Make 4 Rotis). \nMACROS (Approx per serving/2 Rotis): ~340 Kcal | 28g Carbs | 6g Protein.",
+    "active_ingredients": ["Atta", "butter"]
   }
 }
