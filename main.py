@@ -19,7 +19,7 @@ class MacroChefGenerator:
             raw_list = pd.melt(self.df_ingredients)['value'].dropna().unique().tolist()
             self.master_ingredient_domain = [str(x).strip() for x in raw_list]
             
-            self.df_singleserve = pd.read_csv("single_serve_guidelines.csv")
+            self.df_singleserve = pd.read_csv("single_serve_guidelines_new.csv")
             self.master_guidelines = self.df_singleserve.to_string(index=False)
             
         except Exception as e:
@@ -213,9 +213,9 @@ if __name__ == "__main__":
     generator = MacroChefGenerator()
     print(generator.create_prompt(
         
-        #is_prefab=True,
+        is_prefab=True,
         is_custom_prefab=True,
-        #is_customization=True,
+        is_customization=True,
         customization_string= "Make it spicy",
         dish_title="C01-B Salad Meal", 
         protein_choice="Paneer",

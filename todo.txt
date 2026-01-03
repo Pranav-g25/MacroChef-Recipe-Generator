@@ -6,12 +6,27 @@ V0.2 priority list:
 	verify description and macros of each main and side
 	add veg options 
 	seasonal veggie?
-3) carbs and side scaling problem
+3) decouple sides and carbsides(independent scaling) portion scaling 
 4) refactoring ingredient vectors(new format and deterministic check)
-		post processing script 
+------------------------------		post processing script 
 		clubbing multiple ingredients list 
-		extrapolating the single serve ingredients list 
-		
+------------------------------		extrapolating the single serve ingredients list 
+
 5) merging multiple member functionality
+	add multiple mains and multiple side option and then merge them 
 6) Real time macro vector generators 
 7) Integrating custom recipes fully into rec_gen 
+
+
+
+-> serving size(ss) = m*1 + ep*0.5
+	 ==> main will be scaled with ss, sides and carbsides will be scaled with m
+	 (m,ep)= (3,3), ss= 4.5 ==> main will be scaled with 4.5, sides and carbsides will be scaled with 3. 
+
+
+	 
+	 
+
+
+
+
