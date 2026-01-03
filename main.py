@@ -28,7 +28,7 @@ class MacroChefGenerator:
 
         # 2. LOAD JSON DBs
         self.side_dish_db = self._load_json("side_dish_db.json")
-        self.recipe_bank = self._load_json("recipe_bank.json")
+        self.recipe_bank = self._load_json("custom_recipe_bank.json")
         self.carb_db = self._load_json("carb_db.json")
         self.abstract = "MacroChef: A nutrition aware private chef service for gym goers and fitness enthusiasts. Main USP: Just pay us X rupees a month per person and forget about \n" \
         "counting/tracking your macros as well buying groceries forever. Just update your daily/weekly or monthly cuisine/macro/calorific preference in our seamless and user-friendly app\n" \
@@ -215,20 +215,21 @@ if __name__ == "__main__":
         
         is_prefab=True,
         #is_custom_prefab=True,
-        #is_customization=True,
-        #customization_string= "no carbs",
-        dish_title="Prawns Curry", 
-        #protein_choice="Chicken",
-        #dressing_choice="Creamy",
-        #sauce_choice="Green Herb",
+        is_customization=True,
+        customization_string= "Make it spicy",
+        dish_title="Soy Chunks curry", 
+        #protein_choice="Grilled Chicken",
+        #dressing_choice="Vinaigrette",
+        #sauce_choice="Spiced Red",
         #carb_choice="Noodles",
         #carb_choice="Rice",
         #is_carbside = False,
-        serving_size="1.5",
-        side_title= "F01 Fruit Chat",
-        carb_side_title="Whole Wheat Roti",
-        #translation_lang= "Hinglish with devnagri script",
+        serving_size="2",
+        side_title= "Simple Caesar Salad",
+        carb_side_title="Rice",
+        translation_lang= "Hinglish with devnagri script",
     ))
+
 
 
 
