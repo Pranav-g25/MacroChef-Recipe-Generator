@@ -3,9 +3,11 @@ V0.2 priority list:
 1) Improving custom recipes(Chinese bowl too bland, Chinese bowl add onion caps to protein, way less details and not properly written, orange paneer not good, no salt, no air fryer options and instructions, ask for topping instuctions in salad)
 2) DB changes
 	Raita
-	single serve changes 
 	verify description and macros of each main and side
-3) side and main serving size differentiator
-4) Integrating custom recipes fully into rec_gen 
+	add veg options 
+	seasonal veggie?
+3) carbs and side scaling problem
+4) refactoring ingredient vectors(new format and deterministic check)
 5) merging multiple member functionality
 6) Real time macro vector generators 
+7) Integrating custom recipes fully into rec_gen 

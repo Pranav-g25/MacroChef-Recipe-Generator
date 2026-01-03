@@ -213,22 +213,24 @@ if __name__ == "__main__":
     generator = MacroChefGenerator()
     print(generator.create_prompt(
         
-        is_prefab=True,
-        #is_custom_prefab=True,
-        is_customization=True,
-        customization_string= "Make it spicy",
-        dish_title="Soy Chunks curry", 
-        #protein_choice="Grilled Chicken",
+        #is_prefab=True,
+        is_custom_prefab=True,
+        #is_customization=True,
+        #customization_string= "Make it spicy",
+        dish_title="C02-B Chinese Bowl", 
+        protein_choice="Orange Paneer",
         #dressing_choice="Vinaigrette",
         #sauce_choice="Spiced Red",
         #carb_choice="Noodles",
-        #carb_choice="Rice",
+        carb_choice="Rice",
         #is_carbside = False,
-        serving_size="2",
-        side_title= "Simple Caesar Salad",
-        carb_side_title="Rice",
-        translation_lang= "Hinglish with devnagri script",
+        serving_size="4.5",
+        #side_title= "Simple Caesar Salad",
+        #carb_side_title="Roti",
+        #translation_lang= "Hinglish with devnagri script",
     ))
+
+
 
 
 
