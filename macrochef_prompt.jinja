@@ -69,11 +69,9 @@ FINAL OUTPUT FORMAT(Keep everything in text only no images or tables or math cha
 Return the final merged SOP (incorporating Side Dish and Carb steps if applicable) followed by the Final Merged Ingredients Data:
 1. <final_ing_list> (Merged list of names from Main Dish{% if is_side %} + Side Dish{% endif %}{% if is_carbside %} + Carb Side{% endif %}).
    Group the merged ingredients by their category found in the [Master Ingredient List]:
-   - Protein: []
-   - Essentials (N.P.): []
-   - Essentials (P): []
-   - Speciality(NP): []
-   - Speciality(P): []
+   - List 1 (MWR): []
+   - List 2 (WR): []
+   - List 3 (RNT): []
 2. <final_ing_vec> (Merged binary vector of Main Dish{% if is_side %} + Side Dish{% endif %}{% if is_carbside %} + Carb Side{% endif %}).
 
 
@@ -128,11 +126,9 @@ FINAL OUTPUT FORMAT(Keep everything in text only no images or tables or math cha
 Return the SOP Reference Info followed by the Final Merged Ingredients Data:
 1. <final_ing_list> (Merged list of names from Main{% if is_side %} + Side{% endif %}).
    Group the merged ingredients by their category found in the [Master Ingredient List]:
-   - Protein: []
-   - Essentials (N.P.): []
-   - Essentials (P): []
-   - Speciality(NP): []
-   - Speciality(P): []
+   - List 1 (MWR): []
+   - List 2 (WR): []
+   - List 3 (RNT): []
 2. <final_ing_vec> (Merged binary vector of Main{% if is_side %} + Side{% endif %}).
 
 

@@ -1,0 +1,52 @@
+INGREDIENTS VALIDATION & FORMATTING TASK
+
+MASTER INGREDIENT LIST (Source of Truth):
+{{ master_ingredient_list }}
+
+VECTOR CONSTRAINTS:
+- All Ingredient Vectors must be exactly {{ vector_length }} dimensions long.
+- Format: Binary list [0, 1, 0, ...].
+- Each position corresponds to an ingredient in the Master List (column-wise, top to bottom).
+
+------------------------------------------------------------------
+
+INPUT TO VALIDATE:
+"""
+{{ llm_output }}
+"""
+
+------------------------------------------------------------------
+
+YOUR TASK:
+
+1. CHECK CATEGORIZATION: Verify each ingredient in the input is placed in the correct category according to the Master Ingredient List above. If any ingredient is miscategorized, move it to the correct category.
+
+2. CHECK VECTOR: Verify the binary vector matches the ingredients listed. Each ingredient should have a 1 at its corresponding position in the Master List (read column-wise, top to bottom). Fix any mismatches.
+
+3. OUTPUT: Provide the corrected data in the EXACT template format below.
+
+------------------------------------------------------------------
+
+STRICT OUTPUT TEMPLATE (Use this format exactly):
+
+==================================================
+FINAL INGREDIENTS DATA
+==================================================
+
+<errors_found>:
+- (List any categorization or vector errors found, or "None" if no errors)
+
+<final_ing_list>:
+- List 1 (MWR): []
+- List 2 (WR): []
+- List 3 (RNT): []
+
+<final_ing_vec>: []
+
+==================================================
+
+INSTRUCTIONS:
+- First, report any errors found (miscategorized ingredients, vector mismatches, etc.)
+- Then fill in the CORRECTED ingredient lists and vector.
+- Ensure the vector is exactly {{ vector_length }} elements long.
+- Keep everything in plain text format.

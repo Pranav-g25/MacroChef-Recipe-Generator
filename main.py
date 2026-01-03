@@ -12,7 +12,7 @@ class MacroChefGenerator:
         
         # 1. LOAD CSV & CREATE MASTER DOMAIN
         try:
-            self.df_ingredients = pd.read_csv("ingredients.csv")
+            self.df_ingredients = pd.read_csv("ingredients_new.csv")
             self.master_ingredients = self.df_ingredients.to_string(index=False)
             
             # Flatten CSV
@@ -216,16 +216,16 @@ if __name__ == "__main__":
         #is_prefab=True,
         is_custom_prefab=True,
         #is_customization=True,
-        #customization_string= "Make it spicy",
-        dish_title="C02-B Chinese Bowl", 
-        protein_choice="Orange Paneer",
-        #dressing_choice="Vinaigrette",
+        customization_string= "Make it spicy",
+        dish_title="C01-B Salad Meal", 
+        protein_choice="Paneer",
+        dressing_choice="Vinaigrette",
         #sauce_choice="Spiced Red",
         #carb_choice="Noodles",
-        carb_choice="Rice",
+        #carb_choice="Rice",
         #is_carbside = False,
-        serving_size="4.5",
-        #side_title= "Simple Caesar Salad",
+        serving_size="3",
+        #side_title= "Fruit Chat",
         #carb_side_title="Roti",
         #translation_lang= "Hinglish with devnagri script",
     ))

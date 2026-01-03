@@ -8,6 +8,10 @@ V0.2 priority list:
 	seasonal veggie?
 3) carbs and side scaling problem
 4) refactoring ingredient vectors(new format and deterministic check)
+		post processing script 
+		clubbing multiple ingredients list 
+		extrapolating the single serve ingredients list 
+		
 5) merging multiple member functionality
 6) Real time macro vector generators 
 7) Integrating custom recipes fully into rec_gen 
