@@ -215,21 +215,20 @@ if __name__ == "__main__":
         
         is_prefab=True,
         #is_custom_prefab=True,
-        is_customization=True,
-        #customization_string= "Make it spicy",
-        dish_title="Paneer Curry", 
+        #is_customization=True,
+        #customization_string= "Mild spicy",
+        dish_title="Mutton Curry", 
         #protein_choice="Orange Paneer",
         #dressing_choice="Vinaigrette",
         #sauce_choice="Spiced Red",
         #carb_choice="Noodles",
         #carb_choice="Rice",
         #is_carbside = False,
-        serving_size="1",
-        side_title= "Dal",
+        serving_size="1.5",
+        side_title= "Fruit Chat",
         carb_side_title="Rice",
         #translation_lang= "Hinglish with devnagri script",
     ))
-
 
 
 
