@@ -29,6 +29,9 @@ Changes that need to reflect in webapp:
 1) custom string(spicy etc req)
 2) roti variant 
 3) roti and rice quantity multiplier 
+4) proper description of everything 
+
+
 
 
 

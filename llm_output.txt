@@ -1,7 +1,9 @@
-List 1 (MWR): [lemon, Fresh coriander, green chilly, Tomato]
+<final_ing_list>
 
-List 2 (WR): [Salt, pepper powder, onion, olive oil, mustard sauce, vinegar]
+List 1 (MWR): [lemon, peeled garlic, curd, tomato]
 
-List 3 (RNT): [paneer, parmesan cheese, lettuce, whole wheat bread, corn]
+List 2 (WR): [kashmiri chili powder, salt, sugar, cumin powder, chat masala, pepper powder, onion, ketchup]
 
-[1, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0]
+List 3 (RNT): [paneer, cheese slice, lettuce, whole wheat bread]
+
+<final_ing_vec> [1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0]
