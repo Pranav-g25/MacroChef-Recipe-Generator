@@ -213,18 +213,18 @@ if __name__ == "__main__":
     generator = MacroChefGenerator()
     print(generator.create_prompt(
         
-        #is_prefab=True,
+        is_prefab=True,
         is_custom_prefab=True,
         #is_customization=True,
         #customization_string= "Make it spicy",
         dish_title="C03-B Sandwich", 
-        protein_choice="Grilled Paneer",
+        protein_choice="Grilled Chicken",
         #dressing_choice="Creamy",
         sauce_choice="Spiced Red",
         #carb_choice="Noodles",
         #carb_choice="Rice",
         #is_carbside = False,
-        serving_size="2",
+        serving_size="1",
         #side_title= "Seasonal Veggie",
         #carb_side_title="Roti",
         #translation_lang= "Hinglish with devnagri script",

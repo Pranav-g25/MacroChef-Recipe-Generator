@@ -1,9 +1,9 @@
-<final_ing_list>
+final_ing_list
 
-List 1 (MWR): [lemon, peeled garlic, curd, tomato]
+List 1 (MWR): [lemon, peeled garlic, curd, Tomato]
 
-List 2 (WR): [kashmiri chili powder, salt, sugar, cumin powder, chat masala, pepper powder, onion, ketchup]
+List 2 (WR): [Salt, Sugar, cumin powder, chat Masala, pepper powder, kashmiri chili powder, onion, ketchup]
 
-List 3 (RNT): [paneer, cheese slice, lettuce, whole wheat bread]
+List 3 (RNT): [chicken, lettuce, Whole wheat bread, cheese slice]
 
-<final_ing_vec> [1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0]
+final_ing_vec: [1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0]
