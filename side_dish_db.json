@@ -55,9 +55,9 @@
     "4": { "sop": "SLICE: 2-3 Veggies(serving 4). OPTIONAL: Dressing/Masala.", "active_ingredients": ["cucumber", "carrot", "lemon", "Chat Masala"] }
   },
   "Vegetable Raita":{
-    "1": {"sop": "Mix 2 tbsp curd, water.  Add chopped onion, tomato, half green chilly and add cumin powder, salt, black pepper powder.", "active_ingredients": ["onion", "curd", "Tomato", "green chilly", "pepper powder", "cumin powder"] },
-    "2": {"sop": "Mix 4 tbsp curd, water.  Add chopped onion, tomato, half green chilly and add cumin powder, salt, black pepper powder.", "active_ingredients": ["onion", "curd", "Tomato", "green chilly", "pepper powder", "cumin powder"] },
-    "3": {"sop": "Mix 6 tbsp curd, water.  Add chopped onion, tomato, half green chilly and add cumin powder, salt, black pepper powder.", "active_ingredients": ["onion", "curd", "Tomato", "green chilly", "pepper powder", "cumin powder"] },
-    "4": {"sop": "Mix 8 tbsp curd, water.  Add chopped onion, tomato, half green chilly and add cumin powder, salt, black pepper powder.", "active_ingredients": ["onion", "curd", "Tomato", "green chilly", "pepper powder", "cumin powder"] }
+    "1": {"sop": "Mix 3 tbsp curd, water.  Add chopped onion, tomato, half green chilly and add cumin powder, salt, black pepper powder.", "active_ingredients": ["onion", "curd", "Tomato", "green chilly", "pepper powder", "cumin powder"] },
+    "2": {"sop": "Mix 6 tbsp curd, water.  Add chopped onion, tomato, half green chilly and add cumin powder, salt, black pepper powder.", "active_ingredients": ["onion", "curd", "Tomato", "green chilly", "pepper powder", "cumin powder"] },
+    "3": {"sop": "Mix 9 tbsp curd, water.  Add chopped onion, tomato, half green chilly and add cumin powder, salt, black pepper powder.", "active_ingredients": ["onion", "curd", "Tomato", "green chilly", "pepper powder", "cumin powder"] },
+    "4": {"sop": "Mix 12 tbsp curd, water.  Add chopped onion, tomato, half green chilly and add cumin powder, salt, black pepper powder.", "active_ingredients": ["onion", "curd", "Tomato", "green chilly", "pepper powder", "cumin powder"] }
   }
 }

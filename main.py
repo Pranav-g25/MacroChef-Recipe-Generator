@@ -214,20 +214,20 @@ if __name__ == "__main__":
     print(generator.create_prompt(
         
         is_prefab=True,
-        is_custom_prefab=True,
+        #is_custom_prefab=True,
         #is_customization=True,
         #customization_string= "Make it spicy",
-        dish_title="C03-B Sandwich", 
-        protein_choice="Grilled Chicken",
+        dish_title="Paneer Chilla with Green Chutney", 
+        #protein_choice="Grilled Chicken",
         #dressing_choice="Creamy",
-        sauce_choice="Spiced Red",
+        #sauce_choice="Spiced Red",
         #carb_choice="Noodles",
         #carb_choice="Rice",
         #is_carbside = False,
-        serving_size="1",
-        #side_title= "Seasonal Veggie",
+        serving_size="2",
+        side_title= "Vegetable Raita",
         #carb_side_title="Roti",
-        #translation_lang= "Hinglish with devnagri script",
+        translation_lang= "Hinglish with devnagri script",
     ))
 
 
