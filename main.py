@@ -5,21 +5,27 @@ import difflib
 import math
 
 class MacroChefGenerator:
-    def __init__(self, template_file="macrochef_prompt.jinja"):
+    def __init__(self, customer_plan="SUB"):
+        self.customer_plan = customer_plan
         self.loader = jinja2.FileSystemLoader(searchpath="./")
         self.env = jinja2.Environment(loader=self.loader)
+
+        # Load plan-specific template and ingredients
+        template_file = f"macrochef_prompt_{customer_plan}.jinja"
+        ingredients_file = f"ingredients_{customer_plan}.csv"
+
         self.template = self.env.get_template(template_file)
-        
+
         # 1. LOAD CSV & CREATE MASTER DOMAIN
         try:
-            self.df_ingredients = pd.read_csv("ingredients.csv")
+            self.df_ingredients = pd.read_csv(ingredients_file)
             self.master_ingredients = self.df_ingredients.to_string(index=False)
             
             # Flatten CSV
             raw_list = pd.melt(self.df_ingredients)['value'].dropna().unique().tolist()
             self.master_ingredient_domain = [str(x).strip() for x in raw_list]
             
-            self.df_singleserve = pd.read_csv("single_serve_guidelines.csv")
+            self.df_singleserve = pd.read_csv("single_serve_guidelines_new.csv")
             self.master_guidelines = self.df_singleserve.to_string(index=False)
             
         except Exception as e:
@@ -210,25 +216,43 @@ class MacroChefGenerator:
         return self.template.render(context)
 
 if __name__ == "__main__":
-    generator = MacroChefGenerator()
+    # Load config from recipe_config.json
+    try:
+        with open("recipe_config.json", "r") as f:
+            config = json.load(f)
+    except FileNotFoundError:
+        print("ERROR: recipe_config.json not found.")
+        print("Run 'python recipe_config.py' first to generate the config file.")
+        exit(1)
+
+    # Determine mode and plan
+    mode = config.get("mode", "prefab")
+    is_prefab = mode == "prefab"
+    is_custom_prefab = mode == "custom_prefab"
+    is_full_custom_request = mode == "full_custom"
+
+    customer_plan = config.get("customer_plan", "SUB")
+    generator = MacroChefGenerator(customer_plan=customer_plan)
     print(generator.create_prompt(
-        
-        is_prefab=True,
-        #is_custom_prefab=True,
-        is_customization=True,
-        customization_string= "Make it spicy",
-        dish_title="Soy Chunks curry", 
-        #protein_choice="Grilled Chicken",
-        #dressing_choice="Vinaigrette",
-        #sauce_choice="Spiced Red",
-        #carb_choice="Noodles",
-        #carb_choice="Rice",
-        #is_carbside = False,
-        serving_size="2",
-        side_title= "Simple Caesar Salad",
-        carb_side_title="Rice",
-        translation_lang= "Hinglish with devnagri script",
+        is_prefab=is_prefab,
+        is_custom_prefab=is_custom_prefab,
+        is_full_custom_request=is_full_custom_request,
+        dish_title=config.get("dish_title"),
+        serving_size=config.get("serving_size", "1"),
+        side_title=config.get("side_title"),
+        carb_side_title=config.get("carb_side_title"),
+        protein_choice=config.get("protein_choice"),
+        carb_choice=config.get("carb_choice"),
+        sauce_choice=config.get("sauce_choice"),
+        dressing_choice=config.get("dressing_choice"),
+        customization_string=config.get("customization_string"),
+        translation_lang=config.get("translation_lang"),
+        full_custom_request=config.get("full_custom_request"),
     ))
+
+
+    
+
 
 
 

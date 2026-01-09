@@ -1,0 +1,17 @@
+# Config files (recipe parameters - changes frequently)
+recipe_config.json
+
+# Output files
+prompt.txt
+llm_output.txt
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.env
+.venv/
+
+# IDE
+.vscode/
+.idea/

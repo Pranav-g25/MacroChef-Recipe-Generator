@@ -1,0 +1,15 @@
+. <final_ing_list>
+
+Protein: ['Eggs', 'chicken']
+
+Essentials (N.P.): ['Red chilli powder', 'Salt', 'turmeric', 'coriander powder', 'khade masale', 'garam masala', 'Atta', 'neutral oil', 'butter', 'onion']
+
+Essentials (P): ['Ginger Garlic paste', 'Fresh coriander', 'green chilly', 'Tomato']
+
+Speciality(NP): ['pepper powder']
+
+Speciality(P): []
+
+2. <final_ing_vec>
+
+[1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0, 1, 1, 0, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
