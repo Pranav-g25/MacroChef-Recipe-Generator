@@ -212,22 +212,21 @@ class MacroChefGenerator:
 if __name__ == "__main__":
     generator = MacroChefGenerator()
     print(generator.create_prompt(
-        
+
         is_prefab=True,
         #is_custom_prefab=True,
         #is_customization=True,
         #customization_string= "Make it spicy",
-        dish_title="Paneer Chilla with Green Chutney", 
+        dish_title="Shrimp Curry",
         #protein_choice="Grilled Chicken",
         #dressing_choice="Creamy",
         #sauce_choice="Spiced Red",
         #carb_choice="Noodles",
         #carb_choice="Rice",
-        #is_carbside = False,
-        serving_size="2",
-        side_title= "Vegetable Raita",
-        #carb_side_title="Roti",
-        translation_lang= "Hinglish with devnagri script",
+        serving_size="1",
+        side_title= "Whole Seasonal Fruit",
+        carb_side_title="Rice",
+        #translation_lang= "Hinglish with devnagri script",
     ))
 
 
