@@ -1,14 +1,21 @@
 import jinja2
 import pandas as pd
+import json
 
 class FinalCheckGenerator:
-    def __init__(self, template_file="final_check_prompt.jinja"):
+    def __init__(self, customer_plan="SUB"):
+        self.customer_plan = customer_plan
         self.loader = jinja2.FileSystemLoader(searchpath="./")
         self.env = jinja2.Environment(loader=self.loader)
+
+        # Load plan-specific template and ingredients
+        template_file = f"final_check_prompt_{customer_plan}.jinja"
+        ingredients_file = f"ingredients_{customer_plan}.csv"
+
         self.template = self.env.get_template(template_file)
 
         try:
-            self.df_ingredients = pd.read_csv("ingredients_new.csv")
+            self.df_ingredients = pd.read_csv(ingredients_file)
             self.master_ingredients = self.df_ingredients.to_string(index=False)
 
             # Get vector length
@@ -34,6 +41,15 @@ class FinalCheckGenerator:
 
 
 if __name__ == "__main__":
+    # Load customer_plan from recipe_config.json
+    try:
+        with open("recipe_config.json", "r") as f:
+            config = json.load(f)
+        customer_plan = config.get("customer_plan", "SUB")
+    except FileNotFoundError:
+        print("WARNING: recipe_config.json not found. Using default plan 'SUB'.")
+        customer_plan = "SUB"
+
     try:
         with open("llm_output.txt", "r") as f:
             llm_output = f.read()
@@ -42,5 +58,5 @@ if __name__ == "__main__":
         print("Please create llm_output.txt and paste the ingredients portion of the LLM output there.")
         exit(1)
 
-    generator = FinalCheckGenerator()
+    generator = FinalCheckGenerator(customer_plan=customer_plan)
     print(generator.create_prompt(llm_output))

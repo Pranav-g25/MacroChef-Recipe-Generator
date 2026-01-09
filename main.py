@@ -5,14 +5,20 @@ import difflib
 import math
 
 class MacroChefGenerator:
-    def __init__(self, template_file="macrochef_prompt.jinja"):
+    def __init__(self, customer_plan="SUB"):
+        self.customer_plan = customer_plan
         self.loader = jinja2.FileSystemLoader(searchpath="./")
         self.env = jinja2.Environment(loader=self.loader)
+
+        # Load plan-specific template and ingredients
+        template_file = f"macrochef_prompt_{customer_plan}.jinja"
+        ingredients_file = f"ingredients_{customer_plan}.csv"
+
         self.template = self.env.get_template(template_file)
-        
+
         # 1. LOAD CSV & CREATE MASTER DOMAIN
         try:
-            self.df_ingredients = pd.read_csv("ingredients_new.csv")
+            self.df_ingredients = pd.read_csv(ingredients_file)
             self.master_ingredients = self.df_ingredients.to_string(index=False)
             
             # Flatten CSV
@@ -219,13 +225,14 @@ if __name__ == "__main__":
         print("Run 'python recipe_config.py' first to generate the config file.")
         exit(1)
 
-    # Determine mode
+    # Determine mode and plan
     mode = config.get("mode", "prefab")
     is_prefab = mode == "prefab"
     is_custom_prefab = mode == "custom_prefab"
     is_full_custom_request = mode == "full_custom"
 
-    generator = MacroChefGenerator()
+    customer_plan = config.get("customer_plan", "SUB")
+    generator = MacroChefGenerator(customer_plan=customer_plan)
     print(generator.create_prompt(
         is_prefab=is_prefab,
         is_custom_prefab=is_custom_prefab,

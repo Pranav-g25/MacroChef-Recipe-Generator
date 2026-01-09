@@ -108,7 +108,15 @@ def main():
 
     config = {}
 
-    # Step 1: Select Mode
+    # Step 1: Select Customer Plan
+    plan_descriptions = [
+        "SUB - Subscription plan (3 category ingredient list)",
+        "DEMO - Demo plan (5 category ingredient list)"
+    ]
+    plan = display_menu("SELECT CUSTOMER PLAN", plan_descriptions, allow_skip=False)
+    config["customer_plan"] = plan.split(" - ")[0]
+
+    # Step 2: Select Mode
     modes = ["prefab", "custom_prefab", "full_custom"]
     mode_descriptions = [
         "prefab - LLM generates recipe from scratch",
