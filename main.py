@@ -210,23 +210,37 @@ class MacroChefGenerator:
         return self.template.render(context)
 
 if __name__ == "__main__":
+    # Load config from recipe_config.json
+    try:
+        with open("recipe_config.json", "r") as f:
+            config = json.load(f)
+    except FileNotFoundError:
+        print("ERROR: recipe_config.json not found.")
+        print("Run 'python recipe_config.py' first to generate the config file.")
+        exit(1)
+
+    # Determine mode
+    mode = config.get("mode", "prefab")
+    is_prefab = mode == "prefab"
+    is_custom_prefab = mode == "custom_prefab"
+    is_full_custom_request = mode == "full_custom"
+
     generator = MacroChefGenerator()
     print(generator.create_prompt(
-
-        is_prefab=True,
-        #is_custom_prefab=True,
-        #is_customization=True,
-        #customization_string= "Make it spicy",
-        dish_title="Shrimp Curry",
-        #protein_choice="Grilled Chicken",
-        #dressing_choice="Creamy",
-        #sauce_choice="Spiced Red",
-        #carb_choice="Noodles",
-        #carb_choice="Rice",
-        serving_size="1",
-        side_title= "Whole Seasonal Fruit",
-        carb_side_title="Rice",
-        #translation_lang= "Hinglish with devnagri script",
+        is_prefab=is_prefab,
+        is_custom_prefab=is_custom_prefab,
+        is_full_custom_request=is_full_custom_request,
+        dish_title=config.get("dish_title"),
+        serving_size=config.get("serving_size", "1"),
+        side_title=config.get("side_title"),
+        carb_side_title=config.get("carb_side_title"),
+        protein_choice=config.get("protein_choice"),
+        carb_choice=config.get("carb_choice"),
+        sauce_choice=config.get("sauce_choice"),
+        dressing_choice=config.get("dressing_choice"),
+        customization_string=config.get("customization_string"),
+        translation_lang=config.get("translation_lang"),
+        full_custom_request=config.get("full_custom_request"),
     ))
 
 

@@ -1,11 +1,13 @@
 <final_ing_list>
-Grouped by Category:
 
-List 1 (MWR): ['Ginger Garlic paste', 'Fresh coriander', 'green chilly', 'Tomato']
+List 1 (MWR):
+['lemon']
 
-List 2 (WR): ['Red chilli powder', 'Salt', 'turmeric', 'cumin seeds', 'coriander powder', 'garam masala', 'kashmiri chili powder', 'khade masale', 'Basmati rice', 'onion', 'neutral oil']
+List 2 (WR):
+['salt', 'turmeric', 'red chilli powder', 'cumin seeds', 'coriander powder', 'garam masala', 'cumin powder', 'chat Masala', 'kasuri methi', 'onion', 'neutral oil', 'atta', 'ghee']
 
-List 3 (RNT): ['shrimp', 'curry leaves', 'apple', 'coconut milk/powder']
+List 3 (RNT):
+['paneer', 'tomato', 'ginger', 'green chilly', 'fresh coriander', 'curd', 'apple', 'banana', 'papaya']
 
 <final_ing_vec>
-[0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1]
+[1,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0]
